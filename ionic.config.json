@@ -1,0 +1,7 @@
+{
+  "name": "Trashifier",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
