@@ -4,6 +4,7 @@ import { Capacitor, CapacitorCookies } from '@capacitor/core';
 import { Directory, Filesystem } from '@capacitor/filesystem';
 import { Platform } from '@ionic/angular';
 import { TrashifierService } from 'src/app/trashifier.service';
+import { LoadingController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tabClassify',
@@ -11,16 +12,17 @@ import { TrashifierService } from 'src/app/trashifier.service';
   styleUrls: ['tabClassify.page.scss']
 })
 export class TabClassifyPage {
-
   image: any;
   predictionResult: any;
 
-  constructor(private trashifierService: TrashifierService) { }
+  constructor(private trashifierService: TrashifierService, private loadingCtrl: LoadingController) { }
 
   async takePicture() {
     try {
+      // Request camera / photo album image picker
       if (Capacitor.getPlatform() != 'web') await Camera.requestPermissions();
 
+      // The image to be sent
       const image = await Camera.getPhoto({
         quality: 100,
         source: CameraSource.Prompt,
@@ -28,11 +30,27 @@ export class TabClassifyPage {
         resultType: CameraResultType.DataUrl
       });
       console.log('image: ', image);
-      this.image = image.dataUrl;
-      const blob = this.dataURLtoBlob(image.dataUrl);
-      // SEND REQUEST HERE
-      this.getPrediction(blob);
 
+      // Show image to user
+      this.image = image.dataUrl;
+
+      // Present loading
+      const loading = await this.loadingCtrl.create({
+        message: "Classifying the images..."
+      });
+      loading.present();
+
+      // Convert image to blob
+      const blob = this.dataURLtoBlob(image.dataUrl);
+
+      // Sent the image to be classified
+      this.trashifierService.predict(blob).subscribe(async res => {
+        this.predictionResult = res.class;
+        console.log(res);
+
+        // Remove loading 
+        loading.dismiss();
+      })
     } catch (e) {
       console.log(e);
     }
@@ -46,13 +64,4 @@ export class TabClassifyPage {
     }
     return new Blob([u8arr], { type: mime });
   }
-
-  getPrediction(file: Blob) {
-    this.trashifierService.predict(file).subscribe(res => {
-      this.predictionResult = res.class;
-      console.log(res);
-    })
-  }
-
-
 }
