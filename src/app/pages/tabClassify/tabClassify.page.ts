@@ -3,6 +3,7 @@ import { Camera, CameraResultType, CameraSource, Photo } from '@capacitor/camera
 import { Capacitor, CapacitorCookies } from '@capacitor/core';
 import { Directory, Filesystem } from '@capacitor/filesystem';
 import { Platform } from '@ionic/angular';
+import { TrashifierService } from 'src/app/trashifier.service';
 
 @Component({
   selector: 'app-tabClassify',
@@ -12,12 +13,14 @@ import { Platform } from '@ionic/angular';
 export class TabClassifyPage {
 
   image: any;
+  predictionResult: any;
 
-  constructor() { }
+  constructor(private trashifierService: TrashifierService) { }
 
   async takePicture() {
     try {
       if (Capacitor.getPlatform() != 'web') await Camera.requestPermissions();
+
       const image = await Camera.getPhoto({
         quality: 100,
         source: CameraSource.Prompt,
@@ -28,6 +31,7 @@ export class TabClassifyPage {
       this.image = image.dataUrl;
       const blob = this.dataURLtoBlob(image.dataUrl);
       // SEND REQUEST HERE
+      this.getPrediction(blob);
 
     } catch (e) {
       console.log(e);
@@ -41,6 +45,13 @@ export class TabClassifyPage {
       u8arr[n] = bstr.charCodeAt(n);
     }
     return new Blob([u8arr], { type: mime });
+  }
+
+  getPrediction(file: Blob) {
+    this.trashifierService.predict(file).subscribe(res => {
+      this.predictionResult = res.class;
+      console.log(res);
+    })
   }
 
 
