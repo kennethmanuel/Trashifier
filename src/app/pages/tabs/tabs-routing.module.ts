@@ -24,6 +24,10 @@ const routes: Routes = [
         loadChildren: () => import('../tabClassify/tabClassify.module').then(m => m.TabClassifyPageModule)
       },
       {
+        path: 'tabInfo',
+        loadChildren: () => import('../tabInfo/tabInfo.module').then(m => m.TabInfoPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tabDashboard',
         pathMatch: 'full'
