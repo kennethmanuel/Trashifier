@@ -9,4 +9,10 @@ export class TabRecyclableWastePage {
 
   constructor() { }
 
+  recyclabels = [
+    {
+
+    }
+  ]
+
 }

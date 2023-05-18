@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./pages/tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'recyclable-detail',
+    loadChildren: () => import('./pages/recyclable-detail/recyclable-detail.module').then(m => m.RecyclableDetailPageModule)
   }
 ];
 @NgModule({
