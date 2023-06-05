@@ -4,6 +4,11 @@ import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: '/tabs/tabDashboard',
+    pathMatch: 'full'
+  },
+  {
     path: 'tabs',
     component: TabsPage,
     children: [
@@ -28,16 +33,10 @@ const routes: Routes = [
         loadChildren: () => import('../tabInfo/tabInfo.module').then(m => m.TabInfoPageModule)
       },
       {
-        path: '',
-        redirectTo: '/tabs/tabDashboard',
-        pathMatch: 'full'
-      }
+        path: 'recyclable-detail/:id',
+        loadChildren: () => import('../recyclable-detail/recyclable-detail.module').then(m => m.RecyclableDetailPageModule)
+      },
     ]
-  },
-  {
-    path: '',
-    redirectTo: '/tabs/tabDashboard',
-    pathMatch: 'full'
   }
 ];
 

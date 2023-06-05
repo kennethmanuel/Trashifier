@@ -1,0 +1,192 @@
+[
+    {
+        "id": "battery",
+        "categoryName": "Baterai",
+        "imageFileName": "battery.png",
+        "description": "The quick brown fox jumps over the lazy dog",
+        "wasteSample": [
+            {
+                "sampleName": "Accu",
+                "sampleImageName": ""
+            },
+            {
+                "sampleName": "Baterai Alkalin",
+                "sampleImageName": ""
+            }
+        ],
+        "recyclingRecommendations": "",
+        "disposingRecommendations": "",
+        "toxicLevel": 2
+    },
+    {
+        "id": "organics",
+        "categoryName": "Organik",
+        "imageFileName": "battery.png",
+        "description": "The quick brown fox jumps over the lazy dog",
+        "wasteSample": [
+            {
+                "sampleName": "Accu",
+                "sampleImageName": ""
+            },
+            {
+                "sampleName": "Baterai Alkalin",
+                "sampleImageName": ""
+            }
+        ],
+        "recyclingRecommendations": "",
+        "disposingRecommendations": "",
+        "toxicLevel": 2
+    },
+    {
+        "id": "brownglass",
+        "categoryName": "Kaca Cokelat",
+        "imageFileName": "battery.png",
+        "description": "The quick brown fox jumps over the lazy dog",
+        "wasteSample": [
+            {
+                "sampleName": "Accu",
+                "sampleImageName": ""
+            },
+            {
+                "sampleName": "Baterai Alkalin",
+                "sampleImageName": ""
+            }
+        ],
+        "recyclingRecommendations": "",
+        "disposingRecommendations": "",
+        "toxicLevel": 2
+    },
+    {
+        "id": "cardboard",
+        "categoryName": "Karton",
+        "imageFileName": "battery.png",
+        "description": "The quick brown fox jumps over the lazy dog",
+        "wasteSample": [
+            {
+                "sampleName": "Accu",
+                "sampleImageName": ""
+            },
+            {
+                "sampleName": "Baterai Alkalin",
+                "sampleImageName": ""
+            }
+        ],
+        "recyclingRecommendations": "",
+        "disposingRecommendations": "",
+        "toxicLevel": 2
+    },
+    {
+        "id": "clothes",
+        "categoryName": "Tekstil",
+        "imageFileName": "battery.png",
+        "description": "The quick brown fox jumps over the lazy dog",
+        "wasteSample": [
+            {
+                "sampleName": "Accu",
+                "sampleImageName": ""
+            },
+            {
+                "sampleName": "Baterai Alkalin",
+                "sampleImageName": ""
+            }
+        ],
+        "recyclingRecommendations": "",
+        "disposingRecommendations": "",
+        "toxicLevel": 2
+    },
+    {
+        "id": "greenglass",
+        "categoryName": "Kaca Hijau",
+        "imageFileName": "battery.png",
+        "description": "The quick brown fox jumps over the lazy dog",
+        "wasteSample": [
+            {
+                "sampleName": "Accu",
+                "sampleImageName": ""
+            },
+            {
+                "sampleName": "Baterai Alkalin",
+                "sampleImageName": ""
+            }
+        ],
+        "recyclingRecommendations": "",
+        "disposingRecommendations": "",
+        "toxicLevel": 2
+    },
+    {
+        "id": "metal",
+        "categoryName": "Kertas",
+        "imageFileName": "battery.png",
+        "description": "The quick brown fox jumps over the lazy dog",
+        "wasteSample": [
+            {
+                "sampleName": "Accu",
+                "sampleImageName": ""
+            },
+            {
+                "sampleName": "Baterai Alkalin",
+                "sampleImageName": ""
+            }
+        ],
+        "recyclingRecommendations": "",
+        "disposingRecommendations": "",
+        "toxicLevel": 2
+    },
+    {
+        "id": "plastic",
+        "categoryName": "Plastik",
+        "imageFileName": "battery.png",
+        "description": "The quick brown fox jumps over the lazy dog",
+        "wasteSample": [
+            {
+                "sampleName": "Accu",
+                "sampleImageName": ""
+            },
+            {
+                "sampleName": "Baterai Alkalin",
+                "sampleImageName": ""
+            }
+        ],
+        "recyclingRecommendations": "",
+        "disposingRecommendations": "",
+        "toxicLevel": 2
+    },
+    {
+        "id": "shoes",
+        "categoryName": "Sepatu",
+        "imageFileName": "battery.png",
+        "description": "The quick brown fox jumps over the lazy dog",
+        "wasteSample": [
+            {
+                "sampleName": "Accu",
+                "sampleImageName": ""
+            },
+            {
+                "sampleName": "Baterai Alkalin",
+                "sampleImageName": ""
+            }
+        ],
+        "recyclingRecommendations": "",
+        "disposingRecommendations": "",
+        "toxicLevel": 2
+    },
+    {
+        "id": "clearglass",
+        "categoryName": "Kaca Bening",
+        "imageFileName": "battery.png",
+        "description": "The quick brown fox jumps over the lazy dog",
+        "wasteSample": [
+            {
+                "sampleName": "Accu",
+                "sampleImageName": ""
+            },
+            {
+                "sampleName": "Baterai Alkalin",
+                "sampleImageName": ""
+            }
+        ],
+        "recyclingRecommendations": "",
+        "disposingRecommendations": "",
+        "toxicLevel": 2
+    }
+]

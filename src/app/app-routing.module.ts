@@ -7,7 +7,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
-    path: 'recyclable-detail',
+    path: 'recyclable-detail/:id',
     loadChildren: () => import('./pages/recyclable-detail/recyclable-detail.module').then(m => m.RecyclableDetailPageModule)
   }
 ];

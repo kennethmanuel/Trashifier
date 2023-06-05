@@ -7,8 +7,10 @@ export interface APIResult {
   confidence: number;
 }
 
-const WASTE_MNV2_ENDPOINT_URL = 'https://asia-southeast2-heroic-bird-383412.cloudfunctions.net/waste_mnv2_predict';
-const PLASTIC_MNV2_ENDPOINT_URL = 'https://asia-southeast2-heroic-bird-383412.cloudfunctions.net/plastic_mnv2_predict';
+
+// const WASTE_MNV2_ENDPOINT_URL = 'https://asia-southeast2-heroic-bird-383412.cloudfunctions.net/waste_mnv2_predict';
+// const PLASTIC_MNV2_ENDPOINT_URL = 'https://asia-southeast2-heroic-bird-383412.cloudfunctions.net/plastic_mnv2_predict';
+const WASTE_MNV2_ENDPOINT_URL = 'http://localhost:8000/waste-mnv2-predict';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +19,6 @@ export class TrashifierService {
 
   constructor(private http: HttpClient) { }
 
-  // TODO: UPDATE THIS file should not be string
   predict(file: Blob): Observable<APIResult> {
     const formData = new FormData();
     formData.append("file", file);
@@ -26,6 +27,10 @@ export class TrashifierService {
       WASTE_MNV2_ENDPOINT_URL,
       formData
     );
+  }
+
+  getJSON(): Observable<any> {
+    return this.http.get("./assets/recyclable-data.json");
   }
 
 }

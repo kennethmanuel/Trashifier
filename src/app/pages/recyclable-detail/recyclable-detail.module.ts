@@ -1,11 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
 import { IonicModule } from '@ionic/angular';
-
 import { RecyclableDetailPageRoutingModule } from './recyclable-detail-routing.module';
-
 import { RecyclableDetailPage } from './recyclable-detail.page';
 
 @NgModule({
@@ -17,4 +14,4 @@ import { RecyclableDetailPage } from './recyclable-detail.page';
   ],
   declarations: [RecyclableDetailPage]
 })
-export class RecyclableDetailPageModule {}
+export class RecyclableDetailPageModule { }
