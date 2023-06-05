@@ -6,8 +6,6 @@ interface RecyclableSample {
   sampleName: String
   sampleImageName: String
 }
-interface Recyclable {
-}
 
 @Component({
   selector: 'app-recyclable-detail',
@@ -15,19 +13,20 @@ interface Recyclable {
   styleUrls: ['./recyclable-detail.page.scss'],
 })
 export class RecyclableDetailPage implements OnInit {
-  routeId: string = this.route.snapshot.paramMap.get('id') as string;
+
   recyclable: any = "";
 
   constructor(private route: ActivatedRoute, private trashifierService: TrashifierService) { }
 
   ngOnInit() {
-    console.log(this.routeId);
-    this.loadJSON();
+    const routeId: string = this.route.snapshot.paramMap.get('id') as string;
+    console.log(routeId);
+    this.loadJSON(routeId);
   }
 
-  loadJSON() {
+  loadJSON(routeId: string) {
     this.trashifierService.getJSON().subscribe(res => {
-      this.recyclable = res.find((recyclable: { id: string; }) => recyclable.id === this.routeId);
+      this.recyclable = res.find((recyclable: { id: string; }) => recyclable.id === routeId);
       console.log(this.recyclable);
     })
   }
