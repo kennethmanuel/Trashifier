@@ -16,7 +16,11 @@
         ],
         "recyclingRecommendations": "",
         "disposingRecommendations": "",
-        "toxicLevel": 2
+        "toxicLevel": 2,
+        "source": [
+            "1. alsdjfakldfjs",
+            "2. asdjfa;kdjf"
+        ]
     },
     {
         "id": "organics",
