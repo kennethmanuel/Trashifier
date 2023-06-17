@@ -1,0 +1,58 @@
+.header {
+    background-color: #2a2a2a;
+    --ion-color-primary: #ffffff;
+}
+
+.content {
+    --background: #f7f7f7;
+}
+
+.fish-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.fish-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.fish-info {
+    margin-top: 20px;
+    width: 80%;
+}
+
+.callout {
+    display: flex;
+    border: 2px solid #FDEAEC;
+    border-radius: 4px;
+    margin: 16px;
+    color: #E93147
+}
+
+.callout-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FDEAEC;
+    color: #a6a6a6;
+    padding: 10px;
+    border-radius: 4px 0 0 4px;
+}
+
+.callout-content {
+    padding: 10px;
+}
+
+.callout p {
+    margin: 0;
+}

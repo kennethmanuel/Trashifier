@@ -13,7 +13,6 @@ interface RecyclableSample {
   styleUrls: ['./recyclable-detail.page.scss'],
 })
 export class RecyclableDetailPage implements OnInit {
-
   recyclable: any = "";
 
   constructor(private route: ActivatedRoute, private trashifierService: TrashifierService) { }
@@ -30,4 +29,6 @@ export class RecyclableDetailPage implements OnInit {
       console.log(this.recyclable);
     })
   }
+
+
 }

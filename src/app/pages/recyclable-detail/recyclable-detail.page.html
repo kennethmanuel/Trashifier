@@ -7,10 +7,38 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">recyclable-detail</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <div class="fish-detail-container">
+    <div class="fish-image">
+      <img src="assets/waste-category-image/battery.png" alt="Fish Image">
+    </div>
+    <div class="fish-info">
+      <ion-card-header>
+        <ion-card-title>Card Title</ion-card-title>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        Here's a small text description for the card content. Nothing more, nothing less.
+      </ion-card-content>
+
+      <div class="callout">
+        <div class="callout-icon">
+          <i class="fas fa-info-circle"></i>
+          <!-- TODO: add icon -->
+        </div>
+        <div class="callout-content">
+          <p>This is a callout message.</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
 </ion-content>
