@@ -13,7 +13,7 @@
 @import "@ionic/angular/css/core.css";
 
 /* Basic CSS for apps built with Ionic */
-@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/normalize.css" dark;
 @import "@ionic/angular/css/structure.css";
 @import "@ionic/angular/css/typography.css";
 @import '@ionic/angular/css/display.css';
@@ -28,7 +28,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 :root {
-    --ion-font-family: 'Anton', sans-serif;
+    // --ion-font-family: 'Anton', sans-serif;
 }
 
 ion-title {
