@@ -2,7 +2,7 @@
   {
     "id": "battery",
     "categoryName": "Battery",
-    "imageFileName": "battery.png",
+    "imageFileName": "battery.jpg",
     "description": "Portable energy storage devices commonly used in various electronic devices.",
     "wasteSample": [
       {
@@ -21,7 +21,7 @@
   {
     "id": "cardboard",
     "categoryName": "Cardboard",
-    "imageFileName": "battery.png",
+    "imageFileName": "cardboard.jpg",
     "description": "A type of paper-based packaging material made from thick, rigid paper fibers",
     "wasteSample": [
       {
@@ -40,7 +40,7 @@
   {
     "id": "clothes",
     "categoryName": "Clothes",
-    "imageFileName": "battery.png",
+    "imageFileName": "clothes.jpg",
     "description": "Garments or textiles used to cover or adorn the body.",
     "wasteSample": [
       {
@@ -59,7 +59,7 @@
   {
     "id": "glass",
     "categoryName": "Glass",
-    "imageFileName": "battery.png",
+    "imageFileName": "glass.jpg",
     "description": "Solid material made from molten silica and other additives.",
     "wasteSample": [
       {
@@ -78,7 +78,7 @@
   {
     "id": "medical",
     "categoryName": "Medical",
-    "imageFileName": "battery.png",
+    "imageFileName": "medical.png",
     "description": "Various types of waste generated in healthcare facilities, such as hospitals, clinics, or laboratories",
     "wasteSample": [
       {
@@ -97,7 +97,7 @@
   {
     "id": "metal",
     "categoryName": "Metal",
-    "imageFileName": "battery.png",
+    "imageFileName": "metal.png",
     "description": "Naturally occurring elements with high electrical and thermal conductivity.",
     "wasteSample": [
       {
@@ -116,7 +116,7 @@
   {
     "id": "organic",
     "categoryName": "Organic",
-    "imageFileName": "battery.png",
+    "imageFileName": "organic.jpg",
     "description": "Biodegradable materials derived from plants or animals. ",
     "wasteSample": [
       {
@@ -135,7 +135,7 @@
   {
     "id": "paper",
     "categoryName": "Paper",
-    "imageFileName": "battery.png",
+    "imageFileName": "paper.png",
     "description": "A thin sheet material made from plant fibers, such as wood pulp or recycled paper.",
     "wasteSample": [
       {
@@ -154,7 +154,7 @@
   {
     "id": "plastic",
     "categoryName": "Plastic",
-    "imageFileName": "battery.png",
+    "imageFileName": "plastic.jpg",
     "description": "Synthetic polymers made from petroleum-based chemicals",
     "wasteSample": [
       {
@@ -173,7 +173,7 @@
   {
     "id": "shoes",
     "categoryName": "Shoes",
-    "imageFileName": "battery.png",
+    "imageFileName": "shoes.jpg",
     "description": "Footwear worn to protect and support the feet",
     "wasteSample": [
       {
