@@ -1,58 +1,40 @@
-.header {
-    background-color: #2a2a2a;
-    --ion-color-primary: #ffffff;
+.container {
+    margin: 20px;
 }
 
-.content {
-    --background: #f7f7f7;
+h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
 }
 
-.fish-detail-container {
+h2 {
+    font-size: 1.2em;
+}
+
+p {
+    font-size: 1em;
+}
+
+.rec-s-list {
     display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    scroll-snap-type: x mandatory;
+    padding: 8px 0;
+}
+
+.rec-s-item {
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 16px;
+    scroll-snap-align: start;
 }
 
-.fish-image img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+ion-img {
+    display: inline-block;
     border-radius: 50%;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-
-.fish-info {
-    margin-top: 20px;
-    width: 80%;
-}
-
-.callout {
-    display: flex;
-    border: 2px solid #FDEAEC;
-    border-radius: 4px;
-    margin: 16px;
-    color: #E93147
-}
-
-.callout-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #FDEAEC;
-    color: #a6a6a6;
-    padding: 10px;
-    border-radius: 4px 0 0 4px;
-}
-
-.callout-content {
-    padding: 10px;
-}
-
-.callout p {
-    margin: 0;
+    overflow: hidden;
 }
