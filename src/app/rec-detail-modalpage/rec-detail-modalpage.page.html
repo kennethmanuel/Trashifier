@@ -1,9 +1,11 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start" defaultHref="/tabs/tabRecyclableWaste">
-      <ion-back-button></ion-back-button>
+    <ion-title>Your result is!</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
     </ion-buttons>
-    <!-- <ion-title>{{ recyclable.categoryName }}</ion-title> -->
   </ion-toolbar>
 </ion-header>
 

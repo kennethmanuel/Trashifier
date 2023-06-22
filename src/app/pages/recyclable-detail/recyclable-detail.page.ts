@@ -15,11 +15,14 @@ interface RecyclableSample {
 export class RecyclableDetailPage implements OnInit {
   recyclable: any = "";
 
-  constructor(private route: ActivatedRoute, private trashifierService: TrashifierService) { }
+  constructor(
+    private route: ActivatedRoute,
+    private trashifierService: TrashifierService
+  ) { }
 
   ngOnInit() {
     const routeId: string = this.route.snapshot.paramMap.get('id') as string;
-    console.log(routeId);
+    // console.log(routeId);
     this.loadJSON(routeId);
   }
 

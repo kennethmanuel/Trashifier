@@ -1,10 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { Camera, CameraResultType, CameraSource, Photo } from '@capacitor/camera';
-import { Capacitor, CapacitorCookies } from '@capacitor/core';
-import { Directory, Filesystem } from '@capacitor/filesystem';
-import { Platform } from '@ionic/angular';
+import { Component } from '@angular/core';
+import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
+import { Capacitor } from '@capacitor/core';
 import { TrashifierService } from 'src/app/trashifier.service';
 import { LoadingController } from '@ionic/angular';
+import { ModalController } from '@ionic/angular';
+import { RecDetailModalpagePage } from 'src/app/rec-detail-modalpage/rec-detail-modalpage.page';
 
 @Component({
   selector: 'app-tabClassify',
@@ -15,9 +15,13 @@ export class TabClassifyPage {
   image: any;
   predictionResult: any;
 
-  constructor(private trashifierService: TrashifierService, private loadingCtrl: LoadingController) { }
+  constructor(
+    private trashifierService: TrashifierService,
+    private loadingCtrl: LoadingController,
+    private modalController: ModalController
+  ) { }
 
-  async takePicture() {
+  async buttonUploadGarbage() {
     try {
       // Request camera / photo album image picker
       if (Capacitor.getPlatform() != 'web') await Camera.requestPermissions();
@@ -47,9 +51,9 @@ export class TabClassifyPage {
       this.trashifierService.predict(blob).subscribe(async res => {
         this.predictionResult = res.class;
         console.log(res);
-
-        // Remove loading 
+        console.log(this.predictionResult)
         loading.dismiss();
+        this.openModal();
       })
     } catch (e) {
       console.log(e);
@@ -63,5 +67,17 @@ export class TabClassifyPage {
       u8arr[n] = bstr.charCodeAt(n);
     }
     return new Blob([u8arr], { type: mime });
+  }
+
+  async openModal() {
+    const modal = await this.modalController.create({
+      component: RecDetailModalpagePage,
+      // You can pass data to the modal using componentProps
+      componentProps: {
+        // Example data
+        class: this.predictionResult
+      }
+    });
+    await modal.present();
   }
 }

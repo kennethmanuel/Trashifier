@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: 'recyclable-detail/:id',
     loadChildren: () => import('./pages/recyclable-detail/recyclable-detail.module').then(m => m.RecyclableDetailPageModule)
+  },
+  {
+    path: 'rec-detail-modalpage',
+    loadChildren: () => import('./rec-detail-modalpage/rec-detail-modalpage.module').then(m => m.RecDetailModalpagePageModule)
   }
 ];
 @NgModule({
