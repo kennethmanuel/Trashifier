@@ -5,7 +5,10 @@ import { TrashifierService } from 'src/app/trashifier.service';
 import { LoadingController } from '@ionic/angular';
 import { ModalController } from '@ionic/angular';
 import { RecDetailModalpagePage } from 'src/app/rec-detail-modalpage/rec-detail-modalpage.page';
+import { ToastController } from '@ionic/angular';
 
+const TRASH_PRED_ENDPOINT_URL = 'http://localhost:8000/trash-predict';
+const PLASTIC_PRED_ENDPOINT_URL = 'http://localhost:8000/trash-predict';
 @Component({
   selector: 'app-tabClassify',
   templateUrl: 'tabClassify.page.html',
@@ -14,12 +17,24 @@ import { RecDetailModalpagePage } from 'src/app/rec-detail-modalpage/rec-detail-
 export class TabClassifyPage {
   image: any;
   predictionResult: any;
+  errorMessage: any;
 
   constructor(
     private trashifierService: TrashifierService,
     private loadingCtrl: LoadingController,
-    private modalController: ModalController
+    private modalController: ModalController,
+    private toastController: ToastController
   ) { }
+
+  async presentToast(position: 'top' | 'middle' | 'bottom') {
+    const toast = await this.toastController.create({
+      message: this.errorMessage,
+      duration: 1500,
+      position: position,
+    });
+
+    await toast.present();
+  }
 
   async buttonUploadGarbage() {
     try {
@@ -33,22 +48,15 @@ export class TabClassifyPage {
         width: 600,
         resultType: CameraResultType.DataUrl
       });
-      console.log('image: ', image);
+      const imageData = image.dataUrl;
 
-      // Show image to user
-      this.image = image.dataUrl;
-
-      // Present loading
+      // Sent the image to be classified
       const loading = await this.loadingCtrl.create({
-        message: "Classifying the images..."
+        message: "Trying to predict trash type..."
       });
       loading.present();
 
-      // Convert image to blob
-      const blob = this.dataURLtoBlob(image.dataUrl);
-
-      // Sent the image to be classified
-      this.trashifierService.predict(blob).subscribe(async res => {
+      this.trashifierService.predict(imageData).subscribe(async res => {
         this.predictionResult = res.class;
         console.log(res);
         console.log(this.predictionResult)
@@ -56,17 +64,8 @@ export class TabClassifyPage {
         this.openModal();
       })
     } catch (e) {
-      console.log(e);
+      this.errorMessage = e;
     }
-  }
-
-  dataURLtoBlob(dataurl: any) {
-    var arr = dataurl.split(','), mime = arr[0].match(/:(.*?);/)[1],
-      bstr = atob(arr[1]), n = bstr.length, u8arr = new Uint8Array(n);
-    while (n--) {
-      u8arr[n] = bstr.charCodeAt(n);
-    }
-    return new Blob([u8arr], { type: mime });
   }
 
   async openModal() {
