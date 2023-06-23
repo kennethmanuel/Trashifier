@@ -7,10 +7,8 @@ export interface APIResult {
   confidence: number;
 }
 
-
-// const WASTE_MNV2_ENDPOINT_URL = 'https://asia-southeast2-heroic-bird-383412.cloudfunctions.net/waste_mnv2_predict';
-// const PLASTIC_MNV2_ENDPOINT_URL = 'https://asia-southeast2-heroic-bird-383412.cloudfunctions.net/plastic_mnv2_predict';
-const WASTE_MNV2_ENDPOINT_URL = 'http://localhost:8000/waste-mnv2-predict';
+const TRASH_PRED_ENDPOINT_URL = 'http://localhost:8000/trash-predict';
+const PLASTIC_PRED_ENDPOINT_URL = 'http://localhost:8000/trash-predict';
 
 @Injectable({
   providedIn: 'root'
@@ -24,7 +22,7 @@ export class TrashifierService {
     formData.append("file", file);
 
     return this.http.post<APIResult>(
-      WASTE_MNV2_ENDPOINT_URL,
+      TRASH_PRED_ENDPOINT_URL,
       formData
     );
   }
