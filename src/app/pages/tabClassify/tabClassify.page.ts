@@ -6,9 +6,14 @@ import { LoadingController } from '@ionic/angular';
 import { ModalController } from '@ionic/angular';
 import { RecDetailModalpagePage } from 'src/app/rec-detail-modalpage/rec-detail-modalpage.page';
 import { ToastController } from '@ionic/angular';
+import { Observer } from 'rxjs';
 
 const TRASH_PRED_ENDPOINT_URL = 'http://localhost:8000/trash-predict';
 const PLASTIC_PRED_ENDPOINT_URL = 'http://localhost:8000/trash-predict';
+export interface APIResult {
+  class: string;
+  confidence: number;
+}
 @Component({
   selector: 'app-tabClassify',
   templateUrl: 'tabClassify.page.html',
@@ -25,16 +30,6 @@ export class TabClassifyPage {
     private modalController: ModalController,
     private toastController: ToastController
   ) { }
-
-  async presentToast(position: 'top' | 'middle' | 'bottom') {
-    const toast = await this.toastController.create({
-      message: this.errorMessage,
-      duration: 1500,
-      position: position,
-    });
-
-    await toast.present();
-  }
 
   async buttonUploadGarbage() {
     try {
@@ -56,13 +51,26 @@ export class TabClassifyPage {
       });
       loading.present();
 
-      this.trashifierService.predict(imageData).subscribe(async res => {
-        this.predictionResult = res.class;
-        console.log(res);
-        console.log(this.predictionResult)
-        loading.dismiss();
-        this.openModal();
-      })
+      this.trashifierService.predict(imageData).subscribe(
+        {
+          next: (res: APIResult) => {
+            this.predictionResult = res.class;
+            console.log(res);
+            console.log(this.predictionResult);
+            loading.dismiss();
+            this.openModal();
+          },
+          error: async (error: any) => {
+            loading.dismiss();
+            const toast = await this.toastController.create({
+              message: error.message,
+              duration: 3000,
+              position: 'bottom'
+            });
+            toast.present();
+          }
+        }
+      )
     } catch (e) {
       this.errorMessage = e;
     }
