@@ -1,135 +1,134 @@
 [
   {
     "id": "01_PET",
-    "scientific_name": "Polyethylene Terephthalate"
+    "scientific_name": "Polyethylene Terephthalate",
     "abbv": "PET",
-    "description": "A lightweight and clear plastic that is commonly used for packaging food and beverages. It is resistant to moisture and provides good barrier properties against oxygen, making it suitable for storing carbonated drinks, water, and food items such as salad dressings."
-    "decompose_eta" : "~500-1000 years"
-    "resin_identification_code_img_path": ""
+    "description": "A lightweight and clear plastic that is commonly used for packaging food and beverages. It is resistant to moisture and provides good barrier properties against oxygen, making it suitable for storing carbonated drinks, water, and food items such as salad dressings.",
+    "decompose_eta": "~500-1000 years",
+    "resin_identification_code_img_path": "",
     "same_type_sample": [
       {
-        "name": "Water Bottles"
+        "name": "Water Bottles",
         "img_path": ""
       },
       {
-        "name": "Food Containers"
+        "name": "Food Containers",
         "img_path": ""
       },
       {
-        "name": "Egg Packaging"
+        "name": "Egg Packaging",
         "img_path": ""
-      },
-    ],
+      }
+    ]
   },
   {
     "id": "02_PEHD",
-    "scientific_name": "High-Density Polyethylene"
+    "scientific_name": "High-Density Polyethylene",
     "abbv": "HDPE",
-    "description": "Strong and versatile plastic known for its high strength-to-density ratio. It is commonly used for applications requiring durability and resistance to chemicals, such as milk jugs, shampoo bottles, and trash bags. HDPE is also used in various industries, including construction and automotive."
-    "decompose_eta" : "~500-1000 years"
-    "resin_identification_code_img_path": ""
+    "description": "Strong and versatile plastic known for its high strength-to-density ratio. It is commonly used for applications requiring durability and resistance to chemicals, such as milk jugs, shampoo bottles, and trash bags. HDPE is also used in various industries, including construction and automotive.",
+    "decompose_eta": "~500-1000 years",
+    "resin_identification_code_img_path": "",
     "same_type_sample": [
       {
-        "name": "Milk jug"
+        "name": "Milk jug",
         "img_path": ""
       },
       {
-        "name": "Shampoo bottle"
+        "name": "Shampoo bottle",
         "img_path": ""
       },
       {
-        "name": "Trash bags"
+        "name": "Trash bags",
         "img_path": ""
-      },
-    ],
+      }
+    ]
   },
   {
-    "id": "03_PVC"
-    "scientific_name": "Polyvinyl Chloride"
+    "id": "03_PVC",
+    "scientific_name": "Polyvinyl Chloride",
     "abbv": "PVC",
-    "description": "Versatile plastic known for its durability and affordability. It can be rigid or flexible, depending on the additives used during manufacturing. PVC is commonly used in construction for pipes, window frames, and vinyl flooring. It is also used in electrical cable insulation, healthcare products, and signage."
-    "decompose_eta" : "~500-1000 years"
-    "resin_identification_code_img_path": ""
+    "description": "Versatile plastic known for its durability and affordability. It can be rigid or flexible, depending on the additives used during manufacturing. PVC is commonly used in construction for pipes, window frames, and vinyl flooring. It is also used in electrical cable insulation, healthcare products, and signage.",
+    "decompose_eta": "~500-1000 years",
+    "resin_identification_code_img_path": "",
     "same_type_sample": [
       {
-        "name": "PVC pipes"
+        "name": "PVC pipes",
         "img_path": ""
       },
       {
-        "name": "Vinnyl flooring"
+        "name": "Vinnyl flooring",
         "img_path": ""
       },
       {
-        "img_path": ""
+        "img_path": "",
         "name": "Window frames"
-      },
-    ],
+      }
+    ]
   },
   {
-    "id": "04_PELD"
-    "scientific_name": "Low-Density Polyethylene"
+    "id": "04_PELD",
+    "scientific_name": "Low-Density Polyethylene",
     "abbv": "LDPE",
-    "description": "Flexible and lightweight plastic known for its excellent resistance to moisture and chemicals. It is commonly used for plastic bags, shrink wrap, squeeze bottles, and food storage bags. LDPE is also used in various applications requiring flexibility, such as tubing and coatings."
-    "decompose_eta" : "~100-500 years"
-    "resin_identification_code_img_path": ""
+    "description": "Flexible and lightweight plastic known for its excellent resistance to moisture and chemicals. It is commonly used for plastic bags, shrink wrap, squeeze bottles, and food storage bags. LDPE is also used in various applications requiring flexibility, such as tubing and coatings.",
+    "decompose_eta": "~100-500 years",
+    "resin_identification_code_img_path": "",
     "same_type_sample": [
       {
-        "name": "Plastic groccery bag"
+        "name": "Plastic groccery bag",
         "img_path": ""
       },
       {
-        "name": "Squeeze bottle"
+        "name": "Squeeze bottle",
         "img_path": ""
       },
       {
-        "name": "Ziplock bags"
+        "name": "Ziplock bags",
         "img_path": ""
-      },
-    ],
+      }
+    ]
   },
   {
-    "id": "05_PP"
-    "scientific_name": "Polypropylene"
+    "id": "05_PP",
+    "scientific_name": "Polypropylene",
     "abbv": "PP",
-    "description": "Versatile plastic with a high melting point, making it suitable for applications requiring heat resistance. It is commonly used for food storage containers, yogurt cups, bottle caps, and automotive parts. PP offers good chemical resistance and is known for its toughness and durability."
-    "decompose_eta" : "~500-1000 years"
-    "resin_identification_code_img_path": ""
+    "description": "Versatile plastic with a high melting point, making it suitable for applications requiring heat resistance. It is commonly used for food storage containers, yogurt cups, bottle caps, and automotive parts. PP offers good chemical resistance and is known for its toughness and durability.",
+    "decompose_eta": "~500-1000 years",
+    "resin_identification_code_img_path": "",
     "same_type_sample": [
       {
-        "name": "Food storage containers"
+        "name": "Food storage containers",
         "img_path": ""
       },
       {
-        "name": "Yogurt cups"
+        "name": "Yogurt cups",
         "img_path": ""
       },
       {
-        "name": "Bottle caps"
+        "name": "Bottle caps",
         "img_path": ""
-      },
-    ],
+      }
+    ]
   },
   {
-    "id": "06_PS"
-    "scientific_name": "Polystyrene"
+    "id": "06_PS",
+    "scientific_name": "Polystyrene",
     "abbv": "PS",
-    "description": "Rigid and lightweight plastic with good insulation properties. It is commonly used for disposable food and beverage containers, such as Styrofoam cups and food trays. PS is also used in packaging materials and insulation products. It can be made into both clear and foam forms."
-    "decompose_eta" : "~500-1000 years"
-    "resin_identification_code_img_path": ""
+    "description": "Rigid and lightweight plastic with good insulation properties. It is commonly used for disposable food and beverage containers, such as Styrofoam cups and food trays. PS is also used in packaging materials and insulation products. It can be made into both clear and foam forms.",
+    "decompose_eta": "~500-1000 years",
+    "resin_identification_code_img_path": "",
     "same_type_sample": [
       {
-        "name": "Styrofoam food container"
+        "name": "Styrofoam food container",
         "img_path": ""
       },
       {
-        "name": "Disposable cutlery"
+        "name": "Disposable cutlery",
         "img_path": ""
       },
       {
-        "name": "Packaging material (e.g. peanuts)"
+        "name": "Packaging material (,e.g. peanuts)",
         "img_path": ""
-      },
-    ],
-    "toxic_level": ""
+      }
+    ]
   }
 ]
