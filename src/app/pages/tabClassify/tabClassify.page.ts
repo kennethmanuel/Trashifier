@@ -53,11 +53,17 @@ export class TabClassifyPage {
 
       this.trashifierService.predict(imageData).subscribe(
         {
-          next: (res: APIResult) => {
+          next: async (res: APIResult) => {
             this.predictionResult = res.class;
             console.log(res);
             console.log(this.predictionResult);
             loading.dismiss();
+            const predictionToast = await this.toastController.create({
+              message: `We predict with ${res.confidence}% confidence that your prediction is ${this.predictionResult}`,
+              duration: 3000,
+              position: 'bottom'
+            });
+            predictionToast.present();
             this.openModal();
           },
           error: async (error: any) => {

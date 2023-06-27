@@ -2,7 +2,7 @@
   {
     "id": "01_PET",
     "scientific_name": "Polyethylene Terephthalate",
-    "abbv": "PET",
+    "img": "1.jpg",
     "description": "A lightweight and clear plastic that is commonly used for packaging food and beverages. It is resistant to moisture and provides good barrier properties against oxygen, making it suitable for storing carbonated drinks, water, and food items such as salad dressings.",
     "decompose_eta": "~500-1000 years",
     "resin_identification_code_img_path": "",
@@ -24,6 +24,7 @@
   {
     "id": "02_PEHD",
     "scientific_name": "High-Density Polyethylene",
+    "img": "2.jpg",
     "abbv": "HDPE",
     "description": "Strong and versatile plastic known for its high strength-to-density ratio. It is commonly used for applications requiring durability and resistance to chemicals, such as milk jugs, shampoo bottles, and trash bags. HDPE is also used in various industries, including construction and automotive.",
     "decompose_eta": "~500-1000 years",
@@ -46,6 +47,7 @@
   {
     "id": "03_PVC",
     "scientific_name": "Polyvinyl Chloride",
+    "img": "3.jpg",
     "abbv": "PVC",
     "description": "Versatile plastic known for its durability and affordability. It can be rigid or flexible, depending on the additives used during manufacturing. PVC is commonly used in construction for pipes, window frames, and vinyl flooring. It is also used in electrical cable insulation, healthcare products, and signage.",
     "decompose_eta": "~500-1000 years",
@@ -68,6 +70,7 @@
   {
     "id": "04_PELD",
     "scientific_name": "Low-Density Polyethylene",
+    "img": "4.jpg",
     "abbv": "LDPE",
     "description": "Flexible and lightweight plastic known for its excellent resistance to moisture and chemicals. It is commonly used for plastic bags, shrink wrap, squeeze bottles, and food storage bags. LDPE is also used in various applications requiring flexibility, such as tubing and coatings.",
     "decompose_eta": "~100-500 years",
@@ -90,6 +93,7 @@
   {
     "id": "05_PP",
     "scientific_name": "Polypropylene",
+    "img": "5.jpg",
     "abbv": "PP",
     "description": "Versatile plastic with a high melting point, making it suitable for applications requiring heat resistance. It is commonly used for food storage containers, yogurt cups, bottle caps, and automotive parts. PP offers good chemical resistance and is known for its toughness and durability.",
     "decompose_eta": "~500-1000 years",
@@ -112,6 +116,7 @@
   {
     "id": "06_PS",
     "scientific_name": "Polystyrene",
+    "img": "6.jpg",
     "abbv": "PS",
     "description": "Rigid and lightweight plastic with good insulation properties. It is commonly used for disposable food and beverage containers, such as Styrofoam cups and food trays. PS is also used in packaging materials and insulation products. It can be made into both clear and foam forms.",
     "decompose_eta": "~500-1000 years",

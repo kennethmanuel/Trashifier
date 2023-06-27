@@ -2,6 +2,10 @@
   <ion-toolbar>
     <ion-title>GLOSARSARY</ion-title>
   </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
   <ion-segment value="all" [(ngModel)]="selectSegment">
     <ion-segment-button value="Regulasi">
       <ion-label>Regulasi</ion-label>
@@ -10,67 +14,31 @@
       <ion-label>Institusi</ion-label>
     </ion-segment-button>
   </ion-segment>
-</ion-header>
 
-<ion-content [fullscreen]="true">
   <ion-list *ngIf="selectSegment === 'Regulasi'">
-    <ion-card>
+    <ion-card *ngFor="let item of regulationData">
       <ion-card-header>
-        <ion-card-title>Regulasi 1</ion-card-title>
-        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        <ion-card-title>{{ item.num }}</ion-card-title>
+        <ion-card-subtitle>{{ item.type }}</ion-card-subtitle>
       </ion-card-header>
-
+  
       <ion-card-content>
-        Here's a small text description for the card content. Nothing more, nothing less.
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>Regulasi 2</ion-card-title>
-        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      </ion-card-header>
-
-      <ion-card-content>
-        Here's a small text description for the card content. Nothing more, nothing less.
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>Regulasi 3</ion-card-title>
-        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      </ion-card-header>
-
-      <ion-card-content>
-        Here's a small text description for the card content. Nothing more, nothing less.
+        {{ item.description }}
       </ion-card-content>
     </ion-card>
   </ion-list>
 
   <ion-list *ngIf="selectSegment === 'Institusi'">
-    <ion-card>
+    <ion-card *ngFor="let item of institutionData">
       <ion-card-header>
-        <ion-card-title>Intisusi X</ion-card-title>
-        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        <ion-card-title>{{ item.name }}</ion-card-title>
+        <ion-card-subtitle>{{ item.level }}</ion-card-subtitle>
       </ion-card-header>
-
+  
       <ion-card-content>
-        Here's a small text description for the card content. Nothing more, nothing less.
+        {{ item.description }}
       </ion-card-content>
     </ion-card>
-
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>Intisusi Y</ion-card-title>
-        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      </ion-card-header>
-
-      <ion-card-content>
-        Here's a small text description for the card content. Nothing more, nothing less.
-      </ion-card-content>
-    </ion-card>
-
   </ion-list>
-
+  
 </ion-content>

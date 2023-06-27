@@ -1,9 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start" defaultHref="/tabs/tabRecyclableWaste">
-      <ion-back-button></ion-back-button>
+      <ion-back-button color="light"></ion-back-button>
     </ion-buttons>
-    <!-- <ion-title>{{ recyclable.categoryName }}</ion-title> -->
+    <ion-title color="light">More about {{ recyclable.categoryName }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -57,6 +57,20 @@
     <div class="disRecom">
       <h2><b>How this type of waste is disposed:</b></h2>
       <p>{{recyclable.disposingRecommendations}}</p>
+    </div>
+    
+    <div *ngIf="recyclable.id === 'plastic'" class="plastic_more_about">
+      <h2>More about plastic <br><small>*Click to learn more</small> </h2>
+    </div>
+    
+    <div *ngIf="recyclable.id === 'plastic'">
+      <ion-chip *ngFor="let item of plastics">
+        <ion-avatar>
+          <img [alt]="" [src]="'/assets/icon/icons8-recycle-50.png'" />
+        </ion-avatar>
+        <ion-label>{{ item.scientific_name }}</ion-label>
+      </ion-chip>
+      
     </div>
 
   </div>

@@ -13,7 +13,19 @@ const routes: Routes = [
   {
     path: 'rec-detail-modalpage',
     loadChildren: () => import('./rec-detail-modalpage/rec-detail-modalpage.module').then(m => m.RecDetailModalpagePageModule)
-  }
+  },
+  {
+    path: 'about',
+    loadChildren: () => import('./pages/about/about.module').then( m => m.AboutPageModule)
+  },
+  {
+    path: 'guide',
+    loadChildren: () => import('./pages/guide/guide.module').then( m => m.GuidePageModule)
+  },
+  {
+    path: 'privacy-policy',
+    loadChildren: () => import('./pages/privacy-policy/privacy-policy.module').then( m => m.PrivacyPolicyPageModule)
+  },
 ];
 @NgModule({
   imports: [

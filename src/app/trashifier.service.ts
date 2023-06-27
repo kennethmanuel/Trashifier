@@ -55,4 +55,8 @@ export class TrashifierService {
   getJSON(): Observable<any> {
     return this.http.get("./assets/recyclable-data.json");
   }
+  
+  getJSONPlastic(): Observable<any> {
+    return this.http.get("./assets/plastic-data.json");
+  }
 }

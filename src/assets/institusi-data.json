@@ -1,0 +1,27 @@
+
+[
+    {
+        "name": "Kementerian Lingkungan Hidup dan Kehutanan (KLHK)",
+        "level": "Nasional",
+        "description": "Badan Pengelolaan Lingkungan Hidup Daerah (BPLHD):",
+        "url": "https://menlhk.go.id"
+    },
+    {
+        "name": "Badan Pengelolaan Lingkungan Hidup Daerah (BPLHD)",
+        "level": "Provinsi",
+        "description": "Lembaga di tingkat provinsi yang bertanggung jawab dalam pengelolaan lingkungan hidup, termasuk pengelolaan sampah di tingkat provinsi.",
+        "url": ""
+    },
+    {
+        "name": "Badan Pengelola Sampah Nasional (BPSN)",
+        "level": "Nasional",
+        "description": "lembaga yang dibentuk oleh KLHK untuk mengoordinasikan pengelolaan sampah nasional. BPSN bertugas mengembangkan kebijakan dan strategi nasional dalam pengelolaan sampah.",
+        "url": ""
+    },
+    {
+        "name": "Dinas Lingkungan Hidup",
+        "level": "Kabupaten / kota",
+        "description": "Dinas Lingkungan Hidup yang bertanggung jawab dalam pengelolaan sampah di wilayahnya. ",
+        "url": ""
+    }
+]

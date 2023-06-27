@@ -2,11 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TrashifierService } from 'src/app/trashifier.service';
 
-interface RecyclableSample {
-  sampleName: String
-  sampleImageName: String
-}
-
 @Component({
   selector: 'app-recyclable-detail',
   templateUrl: './recyclable-detail.page.html',
@@ -14,6 +9,7 @@ interface RecyclableSample {
 })
 export class RecyclableDetailPage implements OnInit {
   recyclable: any = "";
+  plastics: any = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -22,16 +18,23 @@ export class RecyclableDetailPage implements OnInit {
 
   ngOnInit() {
     const routeId: string = this.route.snapshot.paramMap.get('id') as string;
-    // console.log(routeId);
-    this.loadJSON(routeId);
+    this.loadJSONTrash(routeId);
+    if (routeId == "plastic") {
+      this.loadJSONPlastic();
+    }
   }
 
-  loadJSON(routeId: string) {
+  loadJSONTrash(routeId: string) {
     this.trashifierService.getJSON().subscribe(res => {
       this.recyclable = res.find((recyclable: { id: string; }) => recyclable.id === routeId);
       console.log(this.recyclable);
     })
   }
-
-
+  
+  loadJSONPlastic() {
+    this.trashifierService.getJSONPlastic().subscribe(res => {
+      this.plastics = res;
+      console.log(this.plastics);
+    })
+  }
 }
