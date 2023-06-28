@@ -26,6 +26,14 @@ const routes: Routes = [
     path: 'privacy-policy',
     loadChildren: () => import('./pages/privacy-policy/privacy-policy.module').then( m => m.PrivacyPolicyPageModule)
   },
+  {
+    path: 'plastic-detail/:id',
+    loadChildren: () => import('./pages/plastic-detail/plastic-detail.module').then(m => m.PlasticDetailPageModule)
+  },
+  {
+    path: 'plastic-detail-modalpage',
+    loadChildren: () => import('./plastic-detail-modalpage/plastic-detail-modalpage.module').then( m => m.PlasticDetailModalpagePageModule)
+  },
 ];
 @NgModule({
   imports: [

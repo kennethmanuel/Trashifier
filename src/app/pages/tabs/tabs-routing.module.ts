@@ -14,7 +14,7 @@ const routes: Routes = [
     children: [
       {
         path: 'tabDashboard',
-        loadChildren: () => import('../tabDashboard/tabDashboard.module').then(m => m.TabDashboardPageModule)
+        loadChildren: () => import('../plastic-detail/plastic-detail.module').then(m => m.PlasticDetailPageModule)
       },
       {
         path: 'tabRecyclableWaste',

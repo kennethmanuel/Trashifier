@@ -2,10 +2,10 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { TabDashboardPage } from './tabDashboard.page';
+import { PlasticDetailPage } from './plastic-detail.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
-import { TabDashboardPageRoutingModule } from './tabDashboard-routing.module';
+import { PlasticDetailPageRoutingModule } from './plastic-detail-routing.module';
 
 @NgModule({
   imports: [
@@ -13,8 +13,8 @@ import { TabDashboardPageRoutingModule } from './tabDashboard-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    TabDashboardPageRoutingModule
+    PlasticDetailPageRoutingModule
   ],
-  declarations: [TabDashboardPage]
+  declarations: [PlasticDetailPage]
 })
-export class TabDashboardPageModule { }
+export class PlasticDetailPageModule { }

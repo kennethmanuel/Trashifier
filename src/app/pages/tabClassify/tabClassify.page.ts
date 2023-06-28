@@ -9,7 +9,6 @@ import { ToastController } from '@ionic/angular';
 import { Observer } from 'rxjs';
 
 const TRASH_PRED_ENDPOINT_URL = 'http://localhost:8000/trash-predict';
-const PLASTIC_PRED_ENDPOINT_URL = 'http://localhost:8000/trash-predict';
 export interface APIResult {
   class: string;
   confidence: number;
@@ -93,4 +92,5 @@ export class TabClassifyPage {
     });
     await modal.present();
   }
+
 }

@@ -9,7 +9,7 @@ export interface APIResult {
 }
 
 const TRASH_PRED_ENDPOINT_URL = 'http://localhost:8000/trash-predict';
-const PLASTIC_PRED_ENDPOINT_URL = 'http://localhost:8000/trash-predict';
+const PLASTIC_PRED_ENDPOINT_URL = 'http://localhost:8000/plastic-predict';
 
 @Injectable({
   providedIn: 'root'
@@ -35,6 +35,31 @@ export class TrashifierService {
 
     return this.http.post<APIResult>(
       TRASH_PRED_ENDPOINT_URL,
+      formData
+    ).pipe(
+      catchError((error) => {
+        if (error.status === 0) {
+          // Server is turned off, handle the error accordingly
+          const customError = new Error('Server is currently unavailable');
+          customError.name = 'ServerUnavailableError';
+          return throwError(() => customError);
+        } else {
+          // Handle other errors
+          console.error('Error:', error);
+          return throwError(() => error);
+        }
+      })
+    );
+  }
+
+  predictPlastic(imageData: any): Observable<APIResult> {
+    const file = this.dataURLtoBlob(imageData)
+
+    const formData = new FormData();
+    formData.append('file', file, 'image.jpg');
+
+    return this.http.post<APIResult>(
+      PLASTIC_PRED_ENDPOINT_URL,
       formData
     ).pipe(
       catchError((error) => {
