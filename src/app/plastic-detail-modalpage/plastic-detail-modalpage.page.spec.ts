@@ -1,12 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { PlasticDetailModalpagePage } from './plastic-detail-modalpage.page';
+import { PlasticDetailModalPage } from './plastic-detail-modalpage.page';
 
 describe('PlasticDetailModalpagePage', () => {
-  let component: PlasticDetailModalpagePage;
-  let fixture: ComponentFixture<PlasticDetailModalpagePage>;
+  let component: PlasticDetailModalPage;
+  let fixture: ComponentFixture<PlasticDetailModalPage>;
 
   beforeEach(async(() => {
-    fixture = TestBed.createComponent(PlasticDetailModalpagePage);
+    fixture = TestBed.createComponent(PlasticDetailModalPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

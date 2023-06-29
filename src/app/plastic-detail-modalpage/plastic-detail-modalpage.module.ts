@@ -6,7 +6,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { PlasticDetailModalpagePageRoutingModule } from './plastic-detail-modalpage-routing.module';
 
-import { PlasticDetailModalpagePage } from './plastic-detail-modalpage.page';
+import { PlasticDetailModalPage } from './plastic-detail-modalpage.page';
 
 @NgModule({
   imports: [
@@ -15,6 +15,6 @@ import { PlasticDetailModalpagePage } from './plastic-detail-modalpage.page';
     IonicModule,
     PlasticDetailModalpagePageRoutingModule
   ],
-  declarations: [PlasticDetailModalpagePage]
+  declarations: [PlasticDetailModalPage]
 })
 export class PlasticDetailModalpagePageModule {}

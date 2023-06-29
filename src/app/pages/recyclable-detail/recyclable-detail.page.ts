@@ -6,6 +6,7 @@ import { ToastController } from '@ionic/angular';
 import { ModalController } from '@ionic/angular';
 import { Capacitor } from '@capacitor/core';
 import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
+import { PlasticDetailModalPage } from 'src/app/plastic-detail-modalpage/plastic-detail-modalpage.page';
 
 const PLASTIC_PRED_ENDPOINT_URL = 'http://localhost:8000/trash-predict';
 
@@ -46,7 +47,7 @@ export class RecyclableDetailPage implements OnInit {
       console.log(this.recyclable);
     })
   }
-  
+
   loadJSONPlastic() {
     this.trashifierService.getJSONPlastic().subscribe(res => {
       this.plastics = res;
@@ -78,6 +79,7 @@ export class RecyclableDetailPage implements OnInit {
         {
           next: async (res: APIResult) => {
             this.predictionResult = res.class;
+            console.log("(IMHERE):" + this.predictionResult);
             console.log(res);
             console.log(this.predictionResult);
             loading.dismiss();
@@ -87,13 +89,13 @@ export class RecyclableDetailPage implements OnInit {
               position: 'bottom'
             });
             predictionToast.present();
-            // this.openModal();
+            this.openModal();
           },
           error: async (error: any) => {
             loading.dismiss();
             const toast = await this.toastController.create({
               message: error.message,
-              duration: 3000,
+              duration: 5000,
               position: 'bottom'
             });
             toast.present();
@@ -105,15 +107,15 @@ export class RecyclableDetailPage implements OnInit {
     }
   }
 
-  // async openModal() {
-  //   const modal = await this.modalController.create({
-  //     component: RecDetailModalpagePage,
-  //     // You can pass data to the modal using componentProps
-  //     componentProps: {
-  //       // Example data
-  //       class: this.predictionResult
-  //     }
-  //   });
-  //   await modal.present();
-  // }
+  async openModal() {
+    const modal = await this.modalController.create({
+      component: PlasticDetailModalPage,
+      // You can pass data to the modal using componentProps
+      componentProps: {
+        // Example data
+        class: this.predictionResult
+      }
+    });
+    await modal.present();
+  }
 }
