@@ -6,12 +6,16 @@
     "description": "Portable energy storage devices commonly used in various electronic devices.",
     "wasteSample": [
       {
-        "sampleName": "Accu",
-        "sampleImageName": ""
+        "sampleName": "Battery Pack",
+        "sampleImageName": "battery1.jpg"
       },
       {
-        "sampleName": "Baterai Alkalin",
-        "sampleImageName": ""
+        "sampleName": "Accu",
+        "sampleImageName": "battery2.jpg"
+      },
+      {
+        "sampleName": "Phone battery",
+        "sampleImageName": "battery3.jpg"
       }
     ],
     "recyclingRecommendations": "Batteries can be recycled to recover valuable materials and prevent environmental pollution. The recycling process varies depending on the type of battery. Lead-acid batteries (commonly found in car batteries) are typically recycled by crushing the battery to separate the lead, plastic, and sulfuric acid. The lead and plastic can be reused, and the acid is neutralized or converted into other chemicals. Other types of batteries, such as alkaline batteries or rechargeable batteries (e.g., lithium-ion), undergo different recycling processes to extract and reuse materials like metals and electrolytes.",
@@ -25,12 +29,16 @@
     "description": "A type of paper-based packaging material made from thick, rigid paper fibers",
     "wasteSample": [
       {
-        "sampleName": "Accu",
-        "sampleImageName": ""
+        "sampleName": "Cardbox",
+        "sampleImageName": "cardboard1.jpg"
       },
       {
-        "sampleName": "Baterai Alkalin",
-        "sampleImageName": ""
+        "sampleName": "Electronic packaging",
+        "sampleImageName": "cardboard2.jpg"
+      },
+      {
+        "sampleName": "Food packaging",
+        "sampleImageName": "cardboard3.jpg"
       }
     ],
     "recyclingRecommendations": "Cardboard recycling involves collecting used cardboard, separating it from other materials, and processing it into new cardboard products. The recycling process usually includes removing contaminants like tape or plastic labels. The cardboard is then shredded into small pieces, mixed with water to create a pulp, and cleaned to remove inks and adhesives. The pulp is then pressed and dried to create new cardboard sheets, which can be used to make boxes, packaging materials, and other cardboard products.",
@@ -44,12 +52,16 @@
     "description": "Garments or textiles used to cover or adorn the body.",
     "wasteSample": [
       {
-        "sampleName": "Accu",
-        "sampleImageName": ""
+        "sampleName": "Shirt",
+        "sampleImageName": "clothes1.jpg"
       },
       {
-        "sampleName": "Baterai Alkalin",
-        "sampleImageName": ""
+        "sampleName": "Hat",
+        "sampleImageName": "clothes2.jpg"
+      },
+      {
+        "sampleName": "Pants",
+        "sampleImageName": "clothes3.jpg"
       }
     ],
     "recyclingRecommendations": "Clothing recycling aims to extend the lifespan of garments and reduce textile waste. There are several ways clothes can be recycled. One method involves collecting used clothes and sorting them based on their condition. Wearable items can be resold or donated. Damaged or unwearable clothes can be repurposed into cleaning cloths or insulation materials. Textiles can also be mechanically or chemically processed to recover fibers that can be used to create new textiles or blended with other materials for various applications.",
@@ -63,12 +75,16 @@
     "description": "Solid material made from molten silica and other additives.",
     "wasteSample": [
       {
-        "sampleName": "Accu",
-        "sampleImageName": ""
+        "sampleName": "Brown glass",
+        "sampleImageName": "glass1.jpg"
       },
       {
-        "sampleName": "Baterai Alkalin",
-        "sampleImageName": ""
+        "sampleName": "Clear jar",
+        "sampleImageName": "glass2.jpg"
+      },
+      {
+        "sampleName": "Green bottle",
+        "sampleImageName": "glass3.jpg"
       }
     ],
     "recyclingRecommendations": "Glass recycling involves collecting glass containers and separating them by color (clear, green, brown) to maintain the integrity of the recycled glass. The glass is then crushed into small pieces called cullet. The cullet is melted at high temperatures and molded into new glass products, such as bottles, jars, or fiberglass. Recycling glass reduces the need for raw materials, saves energy, and prevents glass from ending up in landfills where it can take thousands of years to decompose.",
@@ -82,12 +98,16 @@
     "description": "Various types of waste generated in healthcare facilities, such as hospitals, clinics, or laboratories",
     "wasteSample": [
       {
-        "sampleName": "Accu",
-        "sampleImageName": ""
+        "sampleName": "Diaper",
+        "sampleImageName": "medical1.jpg"
       },
       {
-        "sampleName": "Baterai Alkalin",
-        "sampleImageName": ""
+        "sampleName": "Face mask",
+        "sampleImageName": "medical1.jpg"
+      },
+      {
+        "sampleName": "Toothbrush",
+        "sampleImageName": "medical1.jpg"
       }
     ],
     "recyclingRecommendations": "Medical waste recycling requires specialized processes due to the potential hazards associated with medical materials. However, not all medical waste can be recycled. Some items, such as contaminated needles or biohazardous waste, require specific disposal methods. However, certain medical equipment, like metal instruments or devices, can be sterilized and reprocessed for reuse. Recycling programs for medical waste vary depending on local regulations and the specific waste items involved.",
@@ -101,12 +121,16 @@
     "description": "Naturally occurring elements with high electrical and thermal conductivity.",
     "wasteSample": [
       {
-        "sampleName": "Accu",
-        "sampleImageName": ""
+        "sampleName": "Canned drinks",
+        "sampleImageName": "metal1.jpg"
       },
       {
-        "sampleName": "Baterai Alkalin",
-        "sampleImageName": ""
+        "sampleName": "Voil",
+        "sampleImageName": "metal2.jpg"
+      },
+      {
+        "sampleName": "Canned foods",
+        "sampleImageName": "metal2.jpg"
       }
     ],
     "recyclingRecommendations": "Metal recycling is a well-established industry due to the high value of metal materials and the energy savings associated with recycling. The process involves collecting metal items, such as aluminum cans, steel products, or copper wiring, and sorting them by type. The metals are then processed through shredding, melting, and purification processes to remove impurities. The purified metal is formed into ingots or other shapes for use in manufacturing new metal products.",
@@ -120,12 +144,16 @@
     "description": "Biodegradable materials derived from plants or animals. ",
     "wasteSample": [
       {
-        "sampleName": "Accu",
-        "sampleImageName": ""
+        "sampleName": "Food waste",
+        "sampleImageName": "organic1.jpg"
+      },
+      {
+        "sampleName": "Food waste",
+        "sampleImageName": "organic2.jpg"
       },
       {
         "sampleName": "Baterai Alkalin",
-        "sampleImageName": ""
+        "sampleImageName": "organic3.jpg"
       }
     ],
     "recyclingRecommendations": "Organic waste, such as food scraps and yard waste, can be recycled through composting. Composting is a natural process that decomposes organic materials under controlled conditions. Organic waste is collected and placed in composting facilities where it undergoes biological decomposition. Over time, microorganisms break down the organic matter into nutrient-rich compost, which can be used as a soil amendment for gardening, landscaping, or agricultural purposes. Composting organic waste reduces methane emissions from landfills and helps enrich the soil.",
@@ -139,12 +167,16 @@
     "description": "A thin sheet material made from plant fibers, such as wood pulp or recycled paper.",
     "wasteSample": [
       {
-        "sampleName": "Accu",
-        "sampleImageName": ""
+        "sampleName": "Drug packaging",
+        "sampleImageName": "paper1.jpg"
       },
       {
-        "sampleName": "Baterai Alkalin",
-        "sampleImageName": ""
+        "sampleName": "Magazine",
+        "sampleImageName": "paper2.jpg"
+      },
+      {
+        "sampleName": "Newspaper",
+        "sampleImageName": "paper3.jpg"
       }
     ],
     "recyclingRecommendations": "Paper recycling involves collecting used paper products and processing them into new paper. The recycling process typically includes sorting the paper by type and removing any contaminants like plastic or staples. The paper is then mixed with water to create a pulp, which is cleaned to remove inks and dyes. The pulp",
@@ -158,12 +190,16 @@
     "description": "Synthetic polymers made from petroleum-based chemicals",
     "wasteSample": [
       {
-        "sampleName": "Accu",
-        "sampleImageName": ""
+        "sampleName": "Milk bottle",
+        "sampleImageName": "plastic1.jpg"
       },
       {
-        "sampleName": "Baterai Alkalin",
-        "sampleImageName": ""
+        "sampleName": "Plastic bottle",
+        "sampleImageName": "plastic2.jpg"
+      },
+      {
+        "sampleName": "Plastic bag",
+        "sampleImageName": "plastic3.jpg"
       }
     ],
     "recyclingRecommendations": "Plastic recycling involves the collection and processing of plastic waste to create new plastic products. The recycling process varies depending on the type of plastic. Commonly recycled plastics include PET (polyethylene terephthalate) and HDPE (high-density polyethylene). The process generally involves sorting and shredding the plastic, then melting and reforming it into pellets or flakes. These pellets or flakes can be used as raw materials for manufacturing new plastic products like bottles, containers, or fibers. Plastic recycling helps conserve resources, reduce landfill waste, and minimize environmental impact.",
@@ -177,12 +213,16 @@
     "description": "Footwear worn to protect and support the feet",
     "wasteSample": [
       {
-        "sampleName": "Accu",
-        "sampleImageName": ""
+        "sampleName": "Flip flops",
+        "sampleImageName": "shoes1.jpg"
       },
       {
-        "sampleName": "Baterai Alkalin",
-        "sampleImageName": ""
+        "sampleName": "Shoes",
+        "sampleImageName": "shoes2.jpg"
+      },
+      {
+        "sampleName": "High heels",
+        "sampleImageName": "shoes3.jpg"
       }
     ],
     "recyclingRecommendations": "Shoe recycling is a growing practice aimed at reducing waste and extending the life cycle of footwear. Recycling methods for shoes depend on their condition. Wearable shoes can be donated or resold as second-hand items. Damaged shoes or those beyond repair can be disassembled, and various components (such as rubber soles, fabric uppers, metal eyelets, or plastic parts) can be separated for recycling. These materials can be processed into new products or used for other applications like athletic field surfaces or playground padding. Recycling shoes helps reduce the environmental footprint of footwear production and disposal.",
