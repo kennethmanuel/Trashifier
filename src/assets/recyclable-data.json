@@ -34,11 +34,11 @@
       },
       {
         "sampleName": "Electronic packaging",
-        "sampleImageName": "cardboard2.jpg"
+        "sampleImageName": "cardboard2.jpeg"
       },
       {
         "sampleName": "Food packaging",
-        "sampleImageName": "cardboard3.jpg"
+        "sampleImageName": "cardboard3.jpeg"
       }
     ],
     "recyclingRecommendations": "Cardboard recycling involves collecting used cardboard, separating it from other materials, and processing it into new cardboard products. The recycling process usually includes removing contaminants like tape or plastic labels. The cardboard is then shredded into small pieces, mixed with water to create a pulp, and cleaned to remove inks and adhesives. The pulp is then pressed and dried to create new cardboard sheets, which can be used to make boxes, packaging materials, and other cardboard products.",
@@ -57,7 +57,7 @@
       },
       {
         "sampleName": "Hat",
-        "sampleImageName": "clothes2.jpg"
+        "sampleImageName": "clothes2.jpeg"
       },
       {
         "sampleName": "Pants",
