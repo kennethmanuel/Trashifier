@@ -8,16 +8,16 @@
     "resin_identification_code_img_path": "",
     "same_type_sample": [
       {
-        "name": "Water Bottles",
-        "img_path": ""
+        "name": "Bottled drink",
+        "img_path": "pet1.jpg"
       },
       {
-        "name": "Food Containers",
-        "img_path": ""
+        "name": "Egg container",
+        "img_path": "pet2.jpg"
       },
       {
-        "name": "Egg Packaging",
-        "img_path": ""
+        "name": "Soap bottle",
+        "img_path": "pet3.jpg"
       }
     ]
   },
@@ -31,16 +31,16 @@
     "resin_identification_code_img_path": "",
     "same_type_sample": [
       {
-        "name": "Milk jug",
-        "img_path": ""
+        "name": "Floor solution bottle",
+        "img_path": "pehd1.jpg"
       },
       {
         "name": "Shampoo bottle",
-        "img_path": ""
+        "img_path": "pehd2.jpg"
       },
       {
-        "name": "Trash bags",
-        "img_path": ""
+        "name": "Skin care bottlej",
+        "img_path": "pehd3.jpg"
       }
     ]
   },
@@ -54,16 +54,16 @@
     "resin_identification_code_img_path": "",
     "same_type_sample": [
       {
+        "name": "Squeeze bottle",
+        "img_path": "pvc1.jpg"
+      },
+      {
         "name": "PVC pipes",
-        "img_path": ""
+        "img_path": "pvc2.jpg"
       },
       {
-        "name": "Vinnyl flooring",
-        "img_path": ""
-      },
-      {
-        "img_path": "",
-        "name": "Window frames"
+        "name": "PVC pipes",
+        "img_path": "pvc3.jpg"
       }
     ]
   },
@@ -77,16 +77,16 @@
     "resin_identification_code_img_path": "",
     "same_type_sample": [
       {
-        "name": "Plastic groccery bag",
-        "img_path": ""
+        "name": "Plastic bag",
+        "img_path": "peld1.jpg"
       },
       {
-        "name": "Squeeze bottle",
-        "img_path": ""
+        "name": "Plastic bag",
+        "img_path": "peld2.jpg"
       },
       {
-        "name": "Ziplock bags",
-        "img_path": ""
+        "name": "Plastic bag",
+        "img_path": "peld3.jpg"
       }
     ]
   },
@@ -100,16 +100,16 @@
     "resin_identification_code_img_path": "",
     "same_type_sample": [
       {
-        "name": "Food storage containers",
-        "img_path": ""
+        "name": "Food container",
+        "img_path": "pp1.jpg"
+      },
+      {
+        "name": "Ice cream cups",
+        "img_path": "pp2.jpg"
       },
       {
         "name": "Yogurt cups",
-        "img_path": ""
-      },
-      {
-        "name": "Bottle caps",
-        "img_path": ""
+        "img_path": "pp3.jpg"
       }
     ]
   },
@@ -123,16 +123,16 @@
     "resin_identification_code_img_path": "",
     "same_type_sample": [
       {
+        "name": "Food packaging",
+        "img_path": "ps1.jpg"
+      },
+      {
         "name": "Styrofoam food container",
-        "img_path": ""
+        "img_path": "ps2.jpg"
       },
       {
-        "name": "Disposable cutlery",
-        "img_path": ""
-      },
-      {
-        "name": "Packaging material (,e.g. peanuts)",
-        "img_path": ""
+        "name": "Food packaging",
+        "img_path": "ps3.jpg"
       }
     ]
   }

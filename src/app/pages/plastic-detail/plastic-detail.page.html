@@ -29,23 +29,11 @@
       <h2><b>Sample waste with this type:</b></h2>
 
       <div class="rec-s-list">
-        <div class="rec-s-item">
+        <div class="rec-s-item" *ngFor="let item of plastic.same_type_sample">
           <ion-avatar>
-            <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+            <img alt="trash-sample-image" [src]="'assets/plastic-sample-image/'+ plastic.id + '/' + item.img_path" />
           </ion-avatar>
-          <ion-text>Item</ion-text>
-        </div>
-        <div class="rec-s-item">
-          <ion-avatar>
-            <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
-          </ion-avatar>
-          <ion-text>Item</ion-text>
-        </div>
-        <div class="rec-s-item">
-          <ion-avatar>
-            <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
-          </ion-avatar>
-          <ion-text>Item</ion-text>
+          <ion-text>{{ item.name }}</ion-text>
         </div>
       </div>
     </div>
