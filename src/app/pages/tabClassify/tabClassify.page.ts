@@ -8,7 +8,7 @@ import { RecDetailModalpagePage } from 'src/app/rec-detail-modalpage/rec-detail-
 import { ToastController } from '@ionic/angular';
 import { Observer } from 'rxjs';
 
-const TRASH_PRED_ENDPOINT_URL = 'http://localhost:8000/trash-predict';
+const TRASH_PRED_ENDPOINT_URL = 'https://trashifier-api-o3bl7rnfya-et.a.run.app/trash-predict';
 export interface APIResult {
   class: string;
   confidence: number;

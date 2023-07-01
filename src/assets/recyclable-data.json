@@ -103,11 +103,11 @@
       },
       {
         "sampleName": "Face mask",
-        "sampleImageName": "medical1.jpg"
+        "sampleImageName": "medical2.jpg"
       },
       {
         "sampleName": "Toothbrush",
-        "sampleImageName": "medical1.jpg"
+        "sampleImageName": "medical3.jpg"
       }
     ],
     "recyclingRecommendations": "Medical waste recycling requires specialized processes due to the potential hazards associated with medical materials. However, not all medical waste can be recycled. Some items, such as contaminated needles or biohazardous waste, require specific disposal methods. However, certain medical equipment, like metal instruments or devices, can be sterilized and reprocessed for reuse. Recycling programs for medical waste vary depending on local regulations and the specific waste items involved.",
@@ -130,7 +130,7 @@
       },
       {
         "sampleName": "Canned foods",
-        "sampleImageName": "metal2.jpg"
+        "sampleImageName": "metal3.jpg"
       }
     ],
     "recyclingRecommendations": "Metal recycling is a well-established industry due to the high value of metal materials and the energy savings associated with recycling. The process involves collecting metal items, such as aluminum cans, steel products, or copper wiring, and sorting them by type. The metals are then processed through shredding, melting, and purification processes to remove impurities. The purified metal is formed into ingots or other shapes for use in manufacturing new metal products.",
@@ -152,7 +152,7 @@
         "sampleImageName": "organic2.jpg"
       },
       {
-        "sampleName": "Baterai Alkalin",
+        "sampleName": "Food waste",
         "sampleImageName": "organic3.jpg"
       }
     ],

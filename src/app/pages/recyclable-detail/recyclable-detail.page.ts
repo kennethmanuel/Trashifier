@@ -8,7 +8,6 @@ import { Capacitor } from '@capacitor/core';
 import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
 import { PlasticDetailModalPage } from 'src/app/plastic-detail-modalpage/plastic-detail-modalpage.page';
 
-const PLASTIC_PRED_ENDPOINT_URL = 'http://localhost:8000/trash-predict';
 
 export interface APIResult {
   class: string;

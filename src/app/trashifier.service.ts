@@ -8,8 +8,8 @@ export interface APIResult {
   confidence: number;
 }
 
-const TRASH_PRED_ENDPOINT_URL = 'http://localhost:8000/trash-predict';
-const PLASTIC_PRED_ENDPOINT_URL = 'http://localhost:8000/plastic-predict';
+const TRASH_PRED_ENDPOINT_URL = 'https://trashifier-api-o3bl7rnfya-et.a.run.app/trash-predict';
+const PLASTIC_PRED_ENDPOINT_URL = 'https://trashifier-api-o3bl7rnfya-et.a.run.app/plastic-predict';
 
 @Injectable({
   providedIn: 'root'
