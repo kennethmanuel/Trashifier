@@ -6,6 +6,14 @@
 
 <ion-content [fullscreen]="true">
   <ion-list>
+    <ion-item>
+      <ion-text>
+        Waste hierarchy is the fundamental of why sorting is important in the first place.
+        <br>
+        <a [routerLink]="['/guide']">Click here to learn about Waste Hierarchy first!</a>
+      </ion-text>
+
+    </ion-item>
     <ion-item *ngFor="let recyclable of recyclables" [routerLink]="['/recyclable-detail', recyclable.id]">
       <ion-thumbnail slot="start" class="bigger-thumbnail">
         <img [src]="'assets/waste-category-image/' + recyclable.imageFileName" [alt]="recyclable.categoryName" />

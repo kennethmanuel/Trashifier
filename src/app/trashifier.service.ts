@@ -41,7 +41,7 @@ export class TrashifierService {
           return throwError(() => customError);
         } else {
           // Handle other errors
-          console.error('Error:', error);
+          // console.error('Error:', error);
           return throwError(() => error);
         }
       })
@@ -66,7 +66,7 @@ export class TrashifierService {
           return throwError(() => customError);
         } else {
           // Handle other errors
-          console.error('Error:', error);
+          // console.error('Error:', error);
           return throwError(() => error);
         }
       })

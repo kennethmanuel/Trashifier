@@ -34,6 +34,10 @@ const routes: Routes = [
     path: 'plastic-detail-modalpage',
     loadChildren: () => import('./plastic-detail-modalpage/plastic-detail-modalpage.module').then( m => m.PlasticDetailModalpagePageModule)
   },
+  {
+    path: 'recyclecode',
+    loadChildren: () => import('./recyclecode/recyclecode.module').then( m => m.RecyclecodePageModule)
+  },
 ];
 @NgModule({
   imports: [

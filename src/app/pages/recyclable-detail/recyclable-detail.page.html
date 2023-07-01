@@ -70,7 +70,7 @@
 
     <div *ngIf="recyclable.id === 'plastic'" class="plastic_more_about">
 
-      <h2>More about plastic <br><small>*Click to learn more</small> </h2>
+      <h2>Resin type: <br><a [routerLink]="['/recyclecode']">*What is resin type? </a></h2>
 
       <ion-chip *ngFor="let item of plastics" [routerLink]="['/plastic-detail', item.id]">
         <ion-avatar>

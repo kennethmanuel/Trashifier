@@ -40,14 +40,14 @@ export class RecyclableDetailPage implements OnInit {
   loadJSONTrash(routeId: string) {
     this.trashifierService.getJSON().subscribe(res => {
       this.recyclable = res.find((recyclable: { id: string; }) => recyclable.id === routeId);
-      console.log(this.recyclable);
+      // console.log(this.recyclable);
     })
   }
 
   loadJSONPlastic() {
     this.trashifierService.getJSONPlastic().subscribe(res => {
       this.plastics = res;
-      console.log(this.plastics);
+      // console.log(this.plastics);
     })
   }
 
@@ -75,9 +75,9 @@ export class RecyclableDetailPage implements OnInit {
         {
           next: async (res: APIResult) => {
             this.predictionResult = res.class;
-            console.log("(IMHERE):" + this.predictionResult);
-            console.log(res);
-            console.log(this.predictionResult);
+            // console.log("(IMHERE):" + this.predictionResult);
+            // console.log(res);
+            // console.log(this.predictionResult);
             loading.dismiss();
             const predictionToast = await this.toastController.create({
               message: `We predict with ${res.confidence}% confidence that your prediction is ${this.predictionResult}`,
@@ -109,7 +109,7 @@ export class RecyclableDetailPage implements OnInit {
       // You can pass data to the modal using componentProps
       componentProps: {
         // Example data
-        class: this.predictionResult
+        plastic_class: this.predictionResult
       }
     });
     await modal.present();

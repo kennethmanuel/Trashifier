@@ -19,8 +19,8 @@
         <ion-label>What is Trashifier?</ion-label>
       </ion-item>
       <div class="ion-padding" slot="content">
-        Trashifier is an app created to help people recognize their garbage type and be more educated
-        about sorting their trash.
+        Trashifier is an app created to help people recognize their garbage type and be more informed
+        about sorting and recycling their trash.
       </div>
     </ion-accordion>
 
@@ -29,7 +29,7 @@
         <ion-label>How do I use Trashifier?</ion-label>
       </ion-item>
       <div class="ion-padding" slot="content">
-        Simply click the <i>Start Classifying</i> button, take an image of a trash that you didn't know its type. Even
+        Simply click one of the <i>Predict</i> button, take an image of a trash that you didn't know its type. Even
         if you know what type it is, maybe you'll learn a things or two that you didn't know about your Trash type 😉️.
         <br><br>
         Please note that Trashifier was designed to predict a single object, meaning while it may work with multiple
@@ -38,7 +38,7 @@
         While Trashifier can classify <u>most</u> of common municipal solid waste, but 'most' does not mean everything.
         It can also guess what type of plastic your trash is if it happens to be a plastic 😯️🙀️.
         <br><br>
-        <small>*for more info of all the types what Trashifier can classify check <u>About The App</u> </small>
+        <!-- <small>*for more info of all the types what Trashifier can classify check <u>About The App</u> </small> -->
       </div>
     </ion-accordion>
 
@@ -61,9 +61,21 @@
 
   </ion-accordion-group>
 
-  <ion-button class="ion-padding" expand="block" shape="round" (click)="buttonUploadGarbage() ">
-    Start classifying Trash
-  </ion-button>
+  <div class="classify">
+    <p><b>Got a Trash you are not sure what type it is?</b></p>
+    <ion-button class="ion-no-margin ion-no-padding" expand="block" shape="round" (click)="buttonUploadGarbage() ">
+      Predict my&nbsp;<b>Trash</b>
+    </ion-button>
+
+    <div class="or">
+      <p><b>or</b></p>
+    </div>
+
+    <p><b>Got a plastic you are not sure what type it is?</b></p>
+    <ion-button expand="block" shape="round" (click)="buttonUploadPlastic() ">
+      Predict my&nbsp;<b>Plastic</b>
+    </ion-button>
+  </div>
 
 
 </ion-content>
