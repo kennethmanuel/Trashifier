@@ -7,12 +7,13 @@ import { ModalController } from '@ionic/angular';
 import { RecDetailModalpagePage } from 'src/app/rec-detail-modalpage/rec-detail-modalpage.page';
 import { ToastController } from '@ionic/angular';
 import { Observer } from 'rxjs';
+import { APIResult } from '../recyclable-detail/recyclable-detail.page';
 
 const TRASH_PRED_ENDPOINT_URL = 'https://trashifier-api-o3bl7rnfya-et.a.run.app/trash-predict';
-export interface APIResult {
-  class: string;
-  confidence: number;
-}
+// export interface APIResult {
+//   class: string;
+//   confidence: number;
+// }
 @Component({
   selector: 'app-tabClassify',
   templateUrl: 'tabClassify.page.html',
@@ -22,6 +23,7 @@ export class TabClassifyPage {
   image: any;
   predictionResult: any;
   errorMessage: any;
+  plasticPredictionResult: any;
 
   constructor(
     private trashifierService: TrashifierService,
@@ -54,12 +56,14 @@ export class TabClassifyPage {
         {
           next: async (res: APIResult) => {
             this.predictionResult = res.class;
+            this.plasticPredictionResult = res.plastic_type;
             console.log(res);
+            console.log("IMERHEIRERHERHERHEH" + this.plasticPredictionResult);
             console.log(this.predictionResult);
             loading.dismiss();
             const predictionToast = await this.toastController.create({
               message: `We predict with ${res.confidence}% confidence that your prediction is ${this.predictionResult}`,
-              duration: 5000,
+              duration: 3000,
               position: 'bottom'
             });
             predictionToast.present();
@@ -87,7 +91,8 @@ export class TabClassifyPage {
       // You can pass data to the modal using componentProps
       componentProps: {
         // Example data
-        class: this.predictionResult
+        class: this.predictionResult,
+        plastic_class: this.plasticPredictionResult
       }
     });
     await modal.present();

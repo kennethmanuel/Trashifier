@@ -29,24 +29,33 @@
       <h2><b>Sample waste with this type:</b></h2>
 
       <div class="rec-s-list">
-        <div class="rec-s-item">
+        <div class="rec-s-item" *ngFor="let item of recyclable.wasteSample">
           <ion-avatar>
-            <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+            <img alt="trash-sample-image"
+              [src]="'assets/waste-sample-image/'+ recyclable.id + '/' + item.sampleImageName" />
           </ion-avatar>
-          <ion-text>Item</ion-text>
+          <ion-text>{{ item.sampleName }}</ion-text>
         </div>
-        <div class="rec-s-item">
-          <ion-avatar>
-            <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
-          </ion-avatar>
-          <ion-text>Item</ion-text>
-        </div>
-        <div class="rec-s-item">
-          <ion-avatar>
-            <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
-          </ion-avatar>
-          <ion-text>Item</ion-text>
-        </div>
+      </div>
+    </div>
+
+    <div class="dangercallout" *ngIf="recyclable.toxicLevel === 3">
+      <div>
+        <ion-icon name="information-circle" color="danger"></ion-icon>
+      </div>
+      <div class="dangercallout-content callout-content">
+        <h3><b>{{recyclable.calloutTitle}}</b></h3>
+        <p>{{recyclable.calloutMessage}}</p>
+      </div>
+    </div>
+
+    <div class="warningcallout" *ngIf="recyclable.toxicLevel === 2">
+      <div>
+        <ion-icon name="information-circle" color="warning"></ion-icon>
+      </div>
+      <div class="warningcallout-content callout-content">
+        <h3><b>{{recyclable.calloutTitle}}</b></h3>
+        <p>{{recyclable.calloutMessage}}</p>
       </div>
     </div>
 
@@ -58,6 +67,19 @@
     <div class="disRecom">
       <h2><b>How this type of waste is disposed:</b></h2>
       <p>{{recyclable.disposingRecommendations}}</p>
+    </div>
+
+    <div *ngIf="recyclable.id === 'plastic'" class="plastic_more_about">
+
+      <h2>We also guess your plastic type is: <br><small>*Click to learn more</small> </h2>
+
+      <ion-chip (click)="openModal()">
+        <ion-avatar>
+          <img [alt]="" [src]="'/assets/icon/icons8-recycle-50.png'" />
+        </ion-avatar>
+        <ion-label>{{ plastic.scientific_name }}</ion-label>
+      </ion-chip>
+
     </div>
 
   </div>

@@ -38,3 +38,54 @@ ion-img {
     border-radius: 50%;
     overflow: hidden;
 }
+
+small {
+    font-size: 0.6em
+}
+
+.dangercallout {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #FDEAEC;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.dangercallout ion-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.dangercallout-content {
+    color: #E93147;
+    flex-grow: 1;
+}
+
+.warningcallout {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #FCF7E5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.warningcallout-content ion-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.warningcallout-content {
+    color: #E0AD04;
+    flex-grow: 1;
+}
+
+.callout-content h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.callout-content p {
+    margin: 0;
+}

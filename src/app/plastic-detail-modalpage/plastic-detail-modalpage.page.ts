@@ -9,7 +9,7 @@ import { ModalController } from '@ionic/angular';
   styleUrls: ['./plastic-detail-modalpage.page.scss'],
 })
 export class PlasticDetailModalPage implements OnInit {
-  @Input() class: string | undefined;
+  @Input() plastic_class: string | undefined;
   plastic: any = "";
 
   constructor(
@@ -20,16 +20,16 @@ export class PlasticDetailModalPage implements OnInit {
   
   ngOnInit() {
     const routeId: string = this.route.snapshot.paramMap.get('id') as string;
-    this.loadJSONPlastic(routeId);
+    this.loadJSONPlastic();
   }
 
   closeModal() {
     this.modalController.dismiss();
   }
 
-  loadJSONPlastic(routeId: string) {
+  loadJSONPlastic() {
     this.trashifierService.getJSONPlastic().subscribe(res => {
-      this.plastic = res.find((plastic: { id: string; }) => plastic.id === this.class);
+      this.plastic = res.find((plastic: { id: string; }) => plastic.id === this.plastic_class);
       console.log(this.plastic);
     })
   }

@@ -7,12 +7,9 @@ import { ModalController } from '@ionic/angular';
 import { Capacitor } from '@capacitor/core';
 import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
 import { PlasticDetailModalPage } from 'src/app/plastic-detail-modalpage/plastic-detail-modalpage.page';
+import { APIResult } from 'src/app/interfaces/APIResult.interface';
 
 
-export interface APIResult {
-  class: string;
-  confidence: number;
-}
 @Component({
   selector: 'app-recyclable-detail',
   templateUrl: './recyclable-detail.page.html',
@@ -118,3 +115,5 @@ export class RecyclableDetailPage implements OnInit {
     await modal.present();
   }
 }
+export { APIResult };
+

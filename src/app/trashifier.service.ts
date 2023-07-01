@@ -2,11 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
-
-export interface APIResult {
-  class: string;
-  confidence: number;
-}
+import { APIResult } from './interfaces/APIResult.interface';
 
 const TRASH_PRED_ENDPOINT_URL = 'https://trashifier-api-o3bl7rnfya-et.a.run.app/trash-predict';
 const PLASTIC_PRED_ENDPOINT_URL = 'https://trashifier-api-o3bl7rnfya-et.a.run.app/plastic-predict';
