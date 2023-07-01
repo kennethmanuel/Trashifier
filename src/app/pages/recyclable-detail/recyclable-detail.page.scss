@@ -43,7 +43,7 @@ small {
     font-size: 0.6em
 }
 
-.callout {
+.dangercallout {
     display: flex;
     align-items: center;
     padding: 10px;
@@ -52,13 +52,32 @@ small {
     border-radius: 5px;
 }
 
-.callout ion-icon {
+.dangercallout ion-icon {
     font-size: 24px;
     margin-right: 10px;
 }
 
-.callout-content {
+.dangercallout-content {
     color: #E93147;
+    flex-grow: 1;
+}
+
+.warningcallout {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #FCF7E5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.warningcallout-content ion-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.warningcallout-content {
+    color: #E0AD04;
     flex-grow: 1;
 }
 

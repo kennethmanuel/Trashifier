@@ -20,7 +20,9 @@
     ],
     "recyclingRecommendations": "Batteries can be recycled to recover valuable materials and prevent environmental pollution. The recycling process varies depending on the type of battery. Lead-acid batteries (commonly found in car batteries) are typically recycled by crushing the battery to separate the lead, plastic, and sulfuric acid. The lead and plastic can be reused, and the acid is neutralized or converted into other chemicals. Other types of batteries, such as alkaline batteries or rechargeable batteries (e.g., lithium-ion), undergo different recycling processes to extract and reuse materials like metals and electrolytes.",
     "disposingRecommendations": "Batteries should not be disposed of in regular trash because they contain hazardous materials. It is important to recycle batteries through specialized recycling programs or designated collection points. Many communities have battery drop-off locations or recycling centers where batteries can be safely collected and processed to recover valuable materials or dispose of them properly.",
-    "toxicLevel": 3
+    "toxicLevel": 3,
+    "calloutTitle": "Environmental Hazard, Fire Hazard",
+    "calloutMessage":  "Safely dispose of batteries at designated drop-off points, recycling centers, or follow local guidelines."
   },
   {
     "id": "cardboard",
@@ -112,7 +114,9 @@
     ],
     "recyclingRecommendations": "Medical waste recycling requires specialized processes due to the potential hazards associated with medical materials. However, not all medical waste can be recycled. Some items, such as contaminated needles or biohazardous waste, require specific disposal methods. However, certain medical equipment, like metal instruments or devices, can be sterilized and reprocessed for reuse. Recycling programs for medical waste vary depending on local regulations and the specific waste items involved.",
     "disposingRecommendations": "Medical waste should never be disposed of in regular trash bins. It requires proper handling and disposal due to the potential hazards it poses. Medical facilities, such as hospitals or clinics, have specific protocols for disposing of medical waste. This may involve using specialized containers, autoclaving, incineration, or working with licensed medical waste disposal services to ensure safe and proper disposal according to local regulations.",
-    "toxicLevel": 2
+    "toxicLevel": 3,
+    "calloutTitle": "Biohazard",
+    "calloutMessage":  "Follow local regulations and guidelines for medical waste disposal. Use designated disposal containers, contact healthcare facilities, or consult local authorities for safe collection and disposal methods."
   },
   {
     "id": "metal",
@@ -181,7 +185,7 @@
     ],
     "recyclingRecommendations": "Paper recycling involves collecting used paper products and processing them into new paper. The recycling process typically includes sorting the paper by type and removing any contaminants like plastic or staples. The paper is then mixed with water to create a pulp, which is cleaned to remove inks and dyes. The pulp",
     "disposingRecommendations": "Paper is highly recyclable and should be disposed of through recycling programs. Most communities offer paper recycling bins or collection services. Paper waste, such as newspapers, office paper, or cardboard, should be placed in designated recycling bins or taken to recycling centers. It is important to keep paper separate from other trash to maintain its recyclability.",
-    "toxicLevel": 2
+    "toxicLevel": 0
   },
   {
     "id": "plastic",
@@ -204,7 +208,9 @@
     ],
     "recyclingRecommendations": "Plastic recycling involves the collection and processing of plastic waste to create new plastic products. The recycling process varies depending on the type of plastic. Commonly recycled plastics include PET (polyethylene terephthalate) and HDPE (high-density polyethylene). The process generally involves sorting and shredding the plastic, then melting and reforming it into pellets or flakes. These pellets or flakes can be used as raw materials for manufacturing new plastic products like bottles, containers, or fibers. Plastic recycling helps conserve resources, reduce landfill waste, and minimize environmental impact.",
     "disposingRecommendations": "Plastic disposal methods can vary depending on the type of plastic and local recycling capabilities. Recycling is the preferred option for plastic waste. Many communities provide recycling bins or collection services for plastic containers, bottles, and packaging. It is important to follow local recycling guidelines, which often include rinsing out the containers and separating different types of plastic. In areas where recycling options are limited, plastic waste should be disposed of in regular trash bins, but efforts should be made to reduce plastic consumption and choose reusable alternatives.",
-    "toxicLevel": 2
+    "toxicLevel": 2,
+    "calloutTitle": "Environmental Hazard",
+    "calloutMessage":  "Reduce, Reuse, and Recycle! Minimize single-use plastic consumption, choose sustainable alternatives, properly dispose of plastic waste, and support initiatives promoting a circular economy for plastics."
   },
   {
     "id": "shoes",
@@ -227,6 +233,6 @@
     ],
     "recyclingRecommendations": "Shoe recycling is a growing practice aimed at reducing waste and extending the life cycle of footwear. Recycling methods for shoes depend on their condition. Wearable shoes can be donated or resold as second-hand items. Damaged shoes or those beyond repair can be disassembled, and various components (such as rubber soles, fabric uppers, metal eyelets, or plastic parts) can be separated for recycling. These materials can be processed into new products or used for other applications like athletic field surfaces or playground padding. Recycling shoes helps reduce the environmental footprint of footwear production and disposal.",
     "disposingRecommendations": "Shoes should not be disposed of in regular trash because they contain various materials that can be recycled or repurposed. If the shoes are still in good condition, they can be donated to organizations or charities that accept used shoes. Many communities also have shoe recycling programs or drop-off locations where shoes can be collected for recycling. Additionally, some shoe manufacturers or retailers have recycling initiatives in place where customers can return old shoes for proper disposal or recycling.",
-    "toxicLevel": 2
+    "toxicLevel": 0
   }
 ]

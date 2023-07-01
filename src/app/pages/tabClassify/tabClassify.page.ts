@@ -59,7 +59,7 @@ export class TabClassifyPage {
             loading.dismiss();
             const predictionToast = await this.toastController.create({
               message: `We predict with ${res.confidence}% confidence that your prediction is ${this.predictionResult}`,
-              duration: 3000,
+              duration: 5000,
               position: 'bottom'
             });
             predictionToast.present();
@@ -69,7 +69,7 @@ export class TabClassifyPage {
             loading.dismiss();
             const toast = await this.toastController.create({
               message: error.message,
-              duration: 3000,
+              duration: 4000,
               position: 'bottom'
             });
             toast.present();

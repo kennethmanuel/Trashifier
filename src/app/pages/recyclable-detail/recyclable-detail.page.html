@@ -27,21 +27,34 @@
     <div class="wasteSample">
       <h2><b>Sample waste with this type:</b></h2>
 
-      <div class="rec-s-list" >
+      <div class="rec-s-list">
         <div class="rec-s-item" *ngFor="let item of recyclable.wasteSample">
           <ion-avatar>
-            <img alt="trash-sample-image" [src]="'assets/waste-sample-image/'+ recyclable.id + '/' + item.sampleImageName" />
+            <img alt="trash-sample-image"
+              [src]="'assets/waste-sample-image/'+ recyclable.id + '/' + item.sampleImageName" />
           </ion-avatar>
           <ion-text>{{ item.sampleName }}</ion-text>
         </div>
       </div>
     </div>
-    
-    <div class="callout">
-      <ion-icon name="information-circle" color="danger"></ion-icon>
-      <div class="callout-content">
-        <h3>Important Notice</h3>
-        <p>This is an important message that requires attention.</p>
+
+    <div class="dangercallout" *ngIf="recyclable.toxicLevel === 3">
+      <div>
+        <ion-icon name="information-circle" color="danger"></ion-icon>
+      </div>
+      <div class="dangercallout-content callout-content">
+        <h3><b>{{recyclable.calloutTitle}}</b></h3>
+        <p>{{recyclable.calloutMessage}}</p>
+      </div>
+    </div>
+
+    <div class="warningcallout" *ngIf="recyclable.toxicLevel === 2">
+      <div>
+        <ion-icon name="information-circle" color="warning"></ion-icon>
+      </div>
+      <div class="warningcallout-content callout-content">
+        <h3><b>{{recyclable.calloutTitle}}</b></h3>
+        <p>{{recyclable.calloutMessage}}</p>
       </div>
     </div>
 
