@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="light">
-      <ion-back-button slot="start" color="dark" pos></ion-back-button>
+    <ion-back-button slot="start" color="dark" pos></ion-back-button>
   </ion-toolbar>
 </ion-header>
 
@@ -12,14 +12,13 @@
   </ion-header>
 
   <div class="container">
-    <!-- <ion-img [src]="'assets/waste-category-image/' + plastic.img"
-      [alt]="recyclable.categoryName"></ion-img> -->
     <ion-text>
       <h1><b>{{plastic.scientific_name}}</b></h1>
     </ion-text>
     <ion-text>
       <p class="desc">{{plastic.description}}</p>
     </ion-text>
+
     <div class="decompose_eta">
       <h2><b>Time needed to decompose</b></h2>
       <p>{{plastic.decompose_eta}}</p>
@@ -36,6 +35,14 @@
           <ion-text>{{ item.name }}</ion-text>
         </div>
       </div>
+    </div>
+
+    <div class="resincode">
+      <h2><b>Resin Code</b></h2>
+      <div>
+        <ion-img [src]="'assets/resincode/' + plastic.img" alt="resincode"></ion-img>
+      </div>
+      <p><a [routerLink]="">What is resin code?</a></p>
     </div>
 
   </div>
